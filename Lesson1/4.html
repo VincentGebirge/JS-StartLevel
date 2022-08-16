@@ -27,15 +27,13 @@
 -->
 <script>
   "use strict";
-  let userNum = +prompt('Введите любое положительное недробное число');
 
-  const hundreds = (userNum % 1000) / 100;
-  const dozens = (userNum % 100) / 10;
+  const userNum = +prompt('Введите любое положительное недробное число');
+  const hundreds = Math.trunc((userNum % 1000) / 100);
+  const dozens = Math.trunc((userNum % 100) / 10);
   const units = (userNum % 10);
 
-  console.log(`В числе ${Math.trunc(userNum)} количество сотен: ${Math.trunc(hundreds)}, десятков: ${Math.trunc(dozens)}, единиц: ${units}. `)
-
-  alert(`В числе ${Math.trunc(userNum)} количество сотен: ${Math.trunc(hundreds)}, десятков: ${Math.trunc(dozens)}, единиц: ${units}. `)
+  alert(`В числе ${userNum} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}. `);
 
 
 </script>

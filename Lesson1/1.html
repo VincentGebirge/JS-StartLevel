@@ -21,10 +21,9 @@
 -->
 <script>
   "use strict";
-  let tempC = +prompt(`Введите, подалуйста, темепературу в градусах Цельсия`);
-  console.log (+tempC);
-  let tempF = tempC * (9 / 5) + 32;
-  console.log (+tempF);
+
+  const tempC = +prompt(`Введите, пожалуйста, темепературу в градусах Цельсия`);
+  const tempF = tempC * (9 / 5) + 32;
   alert(`Цельсий:  ${tempC}, Фаренгейт:  ${tempF.toFixed(1)}.`);
 
 
