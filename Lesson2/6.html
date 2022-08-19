@@ -43,6 +43,16 @@ console.log(declinationOfNumber(5, "стул", "стула", "стульев"));
 
 
 
+/**
+ * Функция определяет, с каким заданным числом можно поставить слово, окончание
+ * которого по смыслу и орфографии языка подходит. В консоль выводится фраза
+ * "У меня есть ... яблок (яблоко, яблока)"
+ * @param {number} amount
+ * @param {string} one
+ * @param {string} two
+ * @param {string} five
+ * @returns {string}
+ */
   function interpritationOfWord(amount, one, two, five) {
     const units = amount % 10;
     const dozens = amount % 100;
