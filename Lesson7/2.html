@@ -87,7 +87,8 @@
     }
     productsEl.innerHTML = products[event.target.dataset.type]//лишее current 
     //перед Target
-      .map(product => product.getProductMarkup());
+      .map(product => product.getProductMarkup()).join(""); /* добавил join, 
+      чтобы не было скрепляющих символов между элементами массива*/
   });
 
 </script>
