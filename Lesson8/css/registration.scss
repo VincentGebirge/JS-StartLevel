@@ -1,0 +1,328 @@
+.header-main {
+  justify-content: start;
+
+  &-left {
+    margin-left: 14%;
+  }
+}
+
+.other-gender {
+  display: none;
+
+}
+
+
+.section-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 96px;
+
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 360px;
+
+    &-radio {
+      margin-right: 20px;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &-bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-h {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      margin: 0;
+      margin-bottom: 20.5px;
+    }
+
+    &-input {
+      display: block;
+      width: 100%;
+      height: 45px;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      border: 1px solid #A4A4A4;
+      margin-bottom: 20.5px;
+      padding: 0;
+      padding-left: 17px;
+
+
+
+    }
+
+    &-p {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      margin: 0;
+
+    }
+
+    &-radio {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: #000000;
+      margin-top: 11px;
+
+      &-block {
+        margin-top: 10px;
+      }
+    }
+
+    &-bottom {
+      margin-top: 33px;
+    }
+
+    &-btn {
+      width: 167px;
+      height: 50px;
+      border: 0;
+      color: #FFFFFF;
+      background-color: #F16D7F;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      margin-top: 39px;
+      transition: 0.5s linear;
+    }
+
+    &-btn:hover {
+      transition: 0.5s linear;
+      background-color: #FFFFFF;
+      color: #F16D7F;
+      border: 1px solid #F16D7F;
+    }
+  }
+}
+
+
+.section-main-article {
+  display: flex;
+  flex-direction: column;
+  max-width: 652px;
+  padding-left: 129px;
+
+  &-h {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0;
+
+  }
+
+  &-p {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0;
+    margin-top: 22px;
+  }
+
+  &-ul {
+    margin-top: 21px;
+  }
+
+  &-li {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    list-style-image: url(../img/list_chek.png);
+    padding-left: 23px;
+    margin-bottom: 16px;
+
+  }
+}
+
+
+
+
+
+/*                   Медиа-запросы                                  */
+
+/*                  Медиа-запросы для планшета                      */
+
+@media (max-width:768px) and (min-width:376px) {
+  .header-main {
+
+    &-left {
+      margin-left: 16px;
+    }
+  }
+
+  .other-gender {
+    display: inline-block;
+  }
+
+
+  .section-main {
+    width: 100%;
+
+    &-form {
+      width: 43%;
+
+      &-radio {
+        margin-right: 20px;
+      }
+    }
+
+    &-article {
+      padding-left: 44px;
+      width: 48%;
+
+      &-p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+
+      }
+
+      &-h {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+
+      }
+
+      &-ul {
+        padding-left: 28px;
+      }
+
+      &-li {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+    }
+  }
+
+  .subscribe {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-size: cover;
+    padding: 0 0 140px 0;
+  }
+
+  .left_sub {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 50px;
+  }
+
+  .right_sub {
+    margin: 0;
+    height: 100%;
+    margin-top: 48px;
+    width: 40%;
+
+  }
+
+  .sub_p {
+    text-align: center;
+  }
+
+}
+
+
+
+
+
+
+
+/*                  Медиа-запрос для мобильного                       */
+
+@media (max-width: 375px) {
+
+  .section-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+
+    &-form-input {
+      width: 94%;
+    }
+
+    &-article {
+      padding: 0;
+      width: 94%;
+      margin-top: 40px;
+
+      &-h {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-li {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &-ul {
+        padding: 0;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .other-gender {
+    display: inline-block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .subscribe {
+
+    margin-top: 64px;
+  }
+}
